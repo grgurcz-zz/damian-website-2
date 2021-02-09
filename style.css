@@ -3,79 +3,77 @@
     padding: 0;
     font-family: 'Manrope', sans-serif;
     box-sizing: border-box;
-    background: #333333;
     cursor: default;
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
     scroll-behavior: smooth;
+    font-weight: 400;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     background: black;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-.title-page {
+.landing-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 100vh;
+    background: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: fade-in 3s ease-in-out;
+    animation: fade-in 5s ease-in;
 }
 
 .title {
     font-weight: 600;
-    overflow: hidden;
-    font-size: 13vh;
+    font-size: 13vmin;
+    text-decoration: none;
     text-align: center;
 }
 
-hr {
-    color: #0080ff;
-    background-color: #0080ff;
-    border: 0;
-    height: 0.5vh;
-    width: 60vw;
-    animation: fade-in 4s ease-in-out;
+.line {
+    height: 1vmin;
+    width: 70vmin;
+    border-color: yellow;
+    background-color: yellow;
+    border-radius: 1vmin;
 }
 
-.job-wrapper {
-    height: 6vh;
-    width: max-content;
-    overflow: hidden;
-    animation: fade-in 4s ease-in-out;
-}
-
-.jobs {
-    font-size: 5vh;
-    letter-spacing: 0.5vw;
+.subtitle {
+    height: 8vmin;
     text-align: center;
-    animation: change 10s ease-in-out 2s infinite;
+    text-decoration: none;
+    overflow: hidden;
+    list-style: none;
 }
 
-#hero {
-    position: absolute;
-    top: 110vh;
-    left: 60vw;
-    border: 0.5vh solid #0080ff;
-    border-radius: 50%;
-    height: 70vh;
-    width: 70vh;
+.subtitle-item {
+    font-size: 5vmin;
+    text-decoration: none;
+    animation: change 16s 5s infinite;
 }
 
-#about {
-    height: 60vh;
-    width: 45vw;
+.content-page {
     position: absolute;
-    top: 150vh;
-    left: 8vw;
-    background: #333333;
-    color: white;
-    text-align: justify;
-    align-content: center;
+    top: 100vh;
+    left: 0;
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: grey;
+    animation: fade-in 5s;;
 }
 
 @keyframes fade-in {
@@ -121,9 +119,4 @@ hr {
   49.98%,62.64% {transform:translate3d(0,-300%,0);}
   66.64%,79.3% {transform:translate3d(0,-200%,0);}
   83.3%,95.96% {transform:translate3d(0,-100%,0);}
-}
-
-@keyframes filler {
-    from {width: 0;}
-    to{width: ;}
 }
