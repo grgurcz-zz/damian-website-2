@@ -10,6 +10,17 @@
     <title>Damian Hutinec</title>
 </head>
 
+<script>
+    function openVideos(id) {
+        var x = document.getElementById(id)
+        if(x.className.indexOf('w3-show') == -1) {
+            x.className += ' w3-show'
+        } else {
+            x.className = x.className.replace(' w3-show', '')
+        }
+    }
+</script>
+
 <body>
     <div class='landing-page'>
         <div class='title'>
@@ -24,8 +35,43 @@
         </ul>
     </div>
     <div class='content-page'>
-        <div>
+        <div class='content-title'>
+            MY WORK
+        </div>
+        
+        <hr class='line'>
+
+        <div class='content-video-accordions'>
+            <div class='content-accordion w3-dropdown-click w3-center'>
+                <button onclick="openVideos('real-estate')" class='accordion-button'>
+                    REAL ESTATE VIDEOS
+                </button>
+                <div id='real-estate' class='w3-dropdown-content accordion-videos'>
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/336812660?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/336812660?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/336812660?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+            </div>
+            <div class='content-accordion w3-dropdown-click'>
+                <button onclick="openVideos('real-estate')" class='accordion-button'>
+                    REAL ESTATE VIDEOS
+                </button>
+                <div id='real-estate' class='w3-dropdown-content accordion-videos'>
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/336812660?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/336812660?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/336812660?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+            </div>
+        </div>
+
+        <div class='content-title'>
             ABOUT ME
+        </div>
+
+        <hr class='line'>
+
+        <div class='content-article'>
+            I'm Damian, a professional video editor with almost 10 years of experience and hundreds of collaborations with big companies and Youtubers under my belt. I come from Croatia, but speak fluent English and German with a bit of Spanish mixed in. I use Adobe After Effects for most of my editing while combining other products from the Adobe Creative Suite into my workflow to achieve better results. Feel free to <a href='hero.jpeg' style='color: #ffc508; cursor: pointer'>download</a> my CV and check out a selection of my previous work below.
         </div>
     </div>
 <!--
